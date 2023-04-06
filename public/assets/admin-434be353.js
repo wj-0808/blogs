@@ -1,0 +1,1 @@
+import{d as e,c as n,a as o,_ as a,b as p}from"./_plugin-vue_export-helper-ae1e7075.js";const t=e({__name:"Admin",setup(_){return(m,r)=>(o(),n("p",null,"后台管理"))}}),c=a(t,[["__file","D:/Code/blogs/web/admin/Admin.vue"]]),s=p(c);s.mount("#app");
