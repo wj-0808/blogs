@@ -1,7 +1,10 @@
 const express = require('express');
 const router = express.Router();
+// 管理员验证
 const admin = require('../middleware/admin')
+// 验证
 const validation = require('../verification/work')
+// 控制器
 const controller = require('../controller/work')
 
 // 获取作品列表

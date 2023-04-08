@@ -1,8 +1,12 @@
 const express = require('express');
 const router = express.Router();
+// 验证
 const verification = require('../verification/category');
+// 控制器
 const controller = require('../controller/category');
+// 管理员验证
 const admin = require('../middleware/admin')
+
 // 获取所有目录
 router.get('/all', controller.list())
 // 获取所有一级目录列表

@@ -13,6 +13,6 @@ const storage = (path) => {
         }
     })
 }
-
+// 导出 存放路径设置
 exports.uploadImg = multer({ storage: storage('img') })
 exports.uploadWork = multer({ storage: storage('work') })

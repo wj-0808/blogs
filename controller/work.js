@@ -2,7 +2,6 @@ const { Work } = require('../model')
 
 exports.create = async (req, res, next) => {
     try {
-        console.log(req.body);
         let work = new Work(req.body);
         await work.save()
         work = work.toJSON()
@@ -16,7 +15,6 @@ exports.create = async (req, res, next) => {
 }
 exports.getWork = async (req, res, next) => {
     try {
-        console.log(req.params.id);
         const article = await Work.findById(req.params.id);
         res.status(200).json({
             article,
@@ -29,6 +27,7 @@ exports.getWork = async (req, res, next) => {
 exports.list = async (req, res, next) => {
     try {
         let search = req.query;
+        // 筛选条件
         const filter = {};
         let limit = Number.parseInt(search.limit || 10);
         let offset = Number.parseInt(search.offset || 0);

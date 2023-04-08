@@ -34,7 +34,7 @@ exports.work = async (req, res, next) => {
         sourcePath = destination + '/' + filename
         destPath = destination + '/' + filename.split('.')[0];
         fs.mkdir(destPath, { recursive: true }, () => { })
-        // 写入流
+        // 创建读取流
         const readStream = fs.createReadStream(sourcePath);
         readStream.pipe(unzipper.Parse()).on('entry', function (entry) {
             const fileName = entry.path;
@@ -42,7 +42,6 @@ exports.work = async (req, res, next) => {
         }).promise().then(() => {
             fs.unlink('public/upload/work/' + filename, (e) => { console.log(e); })
         })
-
         res.status(200).json({
             message: '成功',
             work: {

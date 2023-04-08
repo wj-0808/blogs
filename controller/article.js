@@ -26,6 +26,7 @@ exports.list = async (req, res, next) => {
         // description : 描述模糊查询
         // titile : 标题模糊查询
         let search = req.query;
+        //筛选条件
         const filter = {};
         let limit = Number.parseInt(search.limit || 10);
         let offset = Number.parseInt(search.offset || 0);

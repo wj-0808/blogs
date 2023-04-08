@@ -2,7 +2,7 @@ const express = require('express');
 const router = express.Router();
 const { uploadImg, uploadWork } = require('../middleware/upload')
 const { img, work } = require('../controller/upload')
-// token
+// 管理员验证
 const admin = require('../middleware/admin')
 
 // 上传图片

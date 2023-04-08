@@ -1,7 +1,6 @@
 const { body, param } = require('express-validator')
 // 验证
 const validations = require('../util/verification')
-const { Work } = require('../model')
 const mongoose = require('mongoose')
 // 是否为mongooes识别的id
 const isMongoId = () => {
