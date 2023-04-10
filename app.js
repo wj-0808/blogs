@@ -11,7 +11,7 @@ const path = require('path');
 const cors = require('cors')
 
 const app = express();
-const PORT = process.env.PORT || 3000;
+const PORT = process.env.PORT || 3030;
 // 解析json格式请求参数
 app.use(express.json());
 // 记录开发日志

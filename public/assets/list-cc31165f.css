@@ -1,0 +1,1 @@
+.list-bg{min-height:100vh;background-color:#93d1ac80}.content{position:relative;left:50%;top:5vh;transform:translate(-50%);width:70%}.item{display:flex;margin:10px;box-sizing:border-box;cursor:pointer}.item-text{flex:1 1 auto}.item img{flex:0 0 auto;width:120px;height:80px;margin-left:24px;background-color:#fff;border-radius:4px;object-fit:cover}

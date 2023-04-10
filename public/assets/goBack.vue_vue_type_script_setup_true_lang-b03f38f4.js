@@ -1,0 +1,1 @@
+import{f as a,o as r,c as s,u as p,r as _}from"./vue-router-0730c5e2.js";const g=a({__name:"goBack",props:{content:null},setup(e){const o=e,n=p(),t=()=>{n.go(-1)};return(l,u)=>{const c=_("el-page-header");return r(),s(c,{onBack:t,title:"返回",content:o.content},null,8,["content"])}}});export{g as _};
